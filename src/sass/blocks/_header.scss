@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  align-items: center;
+  height: 100px; // Встановлюємо висоту хедера під палку
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+
+  &__logo {
+    width: 100px;
+    height: 31px;
+    object-fit: contain;
+    margin: 0 42px;
+  }
+
+  &__divider {
+    width: 0.5px;
+    height: 100px;
+    background: #000;
+
+    &--big {
+      margin-right: 50px;
+    }
+    &:not(&--big) {
+      margin-left: 50px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex: 1;                  // займає всю доступну ширину
+    justify-content: space-between; // рівномірно розтягує кнопки
+  }
+
+  &__btn {
+        /* Сервіс */
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    padding: 40px 0;
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+
+
+    &--lang {
+      font-weight: bold;
+
+      padding: 0 50px;
+    }
+  }
+
+  &__phone {
+    /* +38 (067) 433-26-25 */
+    margin-left: 150px;
+    font-weight: bold;
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+
+
+  }
+
+  &__search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    //border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-left: 15px;
+    background-color: #f5f5f5;
+    &-input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        width: 205px;
+        background: transparent;
+        //background-color: rgba(217, 217, 217, 0.3);
+
+
+      .placeholder{
+        /* Пошук */
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+
+      }
+    }
+
+    &-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00923F;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    // Прибираємо margin-left
+    margin-left: 0;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #007a34;
+    }
+      
+    }
+  }
+}

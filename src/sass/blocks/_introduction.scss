@@ -1,0 +1,80 @@
+.introduction {
+    position: relative;
+    height: 650px; //хочу 650px було 768px
+    background: url('/img/big_photo.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 100px;
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.60);
+        pointer-events: none; // щоб не заважав клікам по контенту під ним
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text-main {
+        /* Аналіз ґрунту */
+
+        margin-top: 135px;
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 115px;
+        line-height: 150px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__text-sub {
+        /* Зменшіть вартість удобрення до 50%, проводячи агрохімічний аналіз ґрунту */
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 100;
+        
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__btn {
+        width: 425px;
+        height: 70px;
+        margin-top: auto;
+        margin-bottom: 110px; // Відступ від низу
+        padding: 16px 48px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        background: #00923F;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 2;
+        transition: background 0.2s;
+        &:hover {
+            background: #007a34;
+        }
+
+        /* Отримати консультацію */
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+}

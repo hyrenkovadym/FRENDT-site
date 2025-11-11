@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRENDT</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header class="header">
+    <img src="icons/header_logo.png" alt="FRENDT" class="header__logo">
+
+    <div class="header__divider header__divider--big"></div>
+
+    <nav class="header__nav">
+        <button class="header__btn">Головна</button>
+        <button class="header__btn">Про компанію</button>
+        <button class="header__btn">Продукти</button>
+        <button class="header__btn">Точне<br>Землеробство</button>
+        <button class="header__btn">Сервіс</button>
+        <button class="header__btn">Контакти</button>
+    </nav>
+
+    <div class="header__phone">+38 (067) 433-26-25</div>
+
+    <div class="header__search">
+        <input class="header__search-input" type="text" placeholder="Пошук">
+        <button class="header__search-btn" type="submit" aria-label="Пошук">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                 style="display:block;">
+                <circle cx="11" cy="11" r="8" stroke="white" stroke-width="3.5"/>
+                <line x1="17.5" y1="17.5" x2="22" y2="22" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="header__divider"></div>
+
+    <button class="header__btn header__btn--lang" id="langBtn">УКР</button>
+</header>
+
+    <div class="introduction">
+        <div class="introduction__overlay"></div>
+        <div class="introduction__content">
+            <div class="introduction__text-main">Аналіз ґрунту</div>
+            <div class="introduction__text-sub">Зменшіть вартість удобрення до 50%, проводячи<br> агрохімічний аналіз ґрунту</div>
+            <button class="introduction__btn">Отримати консультацію</button>
+        </div>
+    </div>
+
+<section class="top-sales">
+  <h2 class="top-sales__title">ТОП ПРОДАЖІВ</h2>
+  <div class="top-sales__slider">
+    <button class="top-sales__arrow top-sales__arrow--left" aria-label="Попередній">
+      <img src="img/ts_left.png" alt="Попередній">
+    </button>
+    <div class="top-sales__slides" id="topSalesSlides">
+      <div class="top-sales__slide">
+        <div class="top-sales__img-wrap">
+          <img src="img/TopS_photo1.png" alt="Автопілот" class="top-sales__img">
+        </div>
+        <div class="top-sales__caption">Автопілот</div>
+        <button class="top-sales__btn">Детальніше</button>
+      </div>
+      <div class="top-sales__slide">
+        <div class="top-sales__img-wrap">
+          <img src="img/topS_photo2.png" alt="Переобладнання обприскувача" class="top-sales__img">
+        </div>
+        <div class="top-sales__caption">Переобладнання<br>обприскувача</div>
+        <button class="top-sales__btn">Детальніше</button>
+      </div>
+      <div class="top-sales__slide">
+        <div class="top-sales__img-wrap">
+          <img src="img/topS_photo3.png" alt="Навігатор Hexagon" class="top-sales__img">
+        </div>
+        <div class="top-sales__caption">Навігатор Hexagon</div>
+        <button class="top-sales__btn">Детальніше</button>
+      </div>
+      <div class="top-sales__slide">
+        <div class="top-sales__img-wrap">
+          <img src="img/topS_photo4.png" alt="Аналіз ґрунту" class="top-sales__img">
+        </div>
+        <div class="top-sales__caption">Аналіз ґрунту</div>
+        <button class="top-sales__btn">Детальніше</button>
+      </div>
+    </div>
+    <button class="top-sales__arrow top-sales__arrow--right" aria-label="Наступний">
+      <img src="img/ts_right.png" alt="Наступний">
+    </button>
+  </div>
+</section>
+
+<section class="map">
+    <div class="map_text">Нам довіряють</div>
+    <img src="img/map_photo.png" alt="Карта довіри" class="map_photo">
+</section>
+
+<section class="reviews">
+  <div class="reviews__header">Відгуки клієнтів</div>
+
+  <div class="reviews__wrapper">
+    <!-- Стрілка вліво -->
+    <button class="reviews__arrow reviews__arrow--left" aria-label="Попередній">
+      <img src="img/ts_left.png" alt="Попередній">
+    </button>
+
+    <!-- Слайдер -->
+    <div class="reviews__slider">
+      <div class="review-card reviews__slide">
+        <div class="review-card__video">
+          <div class="review-card__overlay">Дивитись повне відео</div>
+        </div>
+        <div class="review-card__info">
+          <h3 class="review-card__title">Назва відео 1</h3>
+          <p class="review-card__desc">Короткий опис відео</p>
+        </div>
+      </div>
+
+      <div class="review-card reviews__slide">
+        <div class="review-card__video">
+          <div class="review-card__overlay">Дивитись повне відео</div>
+        </div>
+        <div class="review-card__info">
+          <h3 class="review-card__title">Назва відео 2</h3>
+          <p class="review-card__desc">Короткий опис відео</p>
+        </div>
+      </div>
+
+      <div class="review-card reviews__slide">
+        <div class="review-card__video">
+          <div class="review-card__overlay">Дивитись повне відео</div>
+        </div>
+        <div class="review-card__info">
+          <h3 class="review-card__title">Назва відео 3</h3>
+          <p class="review-card__desc">Короткий опис відео</p>
+        </div>
+      </div>
+
+      <div class="review-card reviews__slide">
+        <div class="review-card__video">
+          <div class="review-card__overlay">Дивитись повне відео</div>
+        </div>
+        <div class="review-card__info">
+          <h3 class="review-card__title">Назва відео 4</h3>
+          <p class="review-card__desc">Короткий опис відео</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Стрілка вправо -->
+    <button class="reviews__arrow reviews__arrow--right" aria-label="Наступний">
+      <img src="img/ts_right.png" alt="Наступний">
+    </button>
+  </div>
+</section>
+
+<div class="line"></div>
+
+<section class="about">
+  <div class="about__row">
+    <div class="about__img">
+      <img src="img/about_img.png" alt="Команда FRENDТ">
+    </div>
+    <div class="about__text">
+      <h2>ПРО КОМПАНІЮ</h2>
+      <p>
+        Ми – команда “FRENDT”, експерти з точного землеробства. Завдяки любові до своєї справи та досить довгому шляху на ринку,
+        сьогодні ми сміливо можемо називати себе лідерами галузі. 
+        Адже ми не просто продаємо обладнання, а й надаємо послуги по впровадженню точного землеробства та забезпечуємо сервісне
+        обслуговування наших клієнтів. 
+        Більше 50-ти спеціалістів галузі щодня працюють над автоматизацією господарств всієї країни. Наша найбільша нагорода –
+        сотні успішних кейсів, від малих господарств до агрохолдингів.
+      </p>
+    </div>
+  </div>
+
+  <div class="about__row about__row--reverse">
+    <div class="about__text about__text-mission">
+      <h2>МІСІЯ</h2>
+      <p>
+        Головна місія компанії «FRENDT» — Аграрна цифрова революція в Україні. І ми робимо все можливе для того, щоб нові цифрові
+        технології якомога швидше входили та закріплялися у нашому аграрному середовищі.
+      </p>
+    </div>
+    <div class="about__img">
+      <img src="img/mission_img.png" alt="Місія компанії">
+    </div>
+  </div>
+
+  <button class="about__button">ЧИТАТИ БІЛЬШЕ</button>
+</section>
+
+<div class="line"></div>
+
+<section class="contribution">
+  <h2 class="contribution__title">
+    НАШ ВНЕСОК В РОЗВИТОК <br> АГРАРНОЇ ГАЛУЗІ УКРАЇНИ
+  </h2>
+
+  <div class="contribution__row">
+    <div class="contribution__img">
+      <img src="img/contribution.png" alt="Аграрні технології">
+    </div>
+    <div class="contribution__text">
+        Ми робимо все можливе для того, щоб автоматизація та нові цифрові технології якомога швидше впроваджувались в українському аграрному середовищі. Потенціал аграрної галузі України повинен повністю розкритись в найближчі 10-20 років завдяки цифровій аграрній революції. Тому ми підготували цикл лекцій, де розповідаємо про впровадження точного землеробства простими словами і на прикладі наших клієнтів.
+        Переглянвши їх ви дізнаєтеся, які з інструментів точного землеробства вам варто впровадити в першу чергу і які дадуть найкращі результати.
+
+    </div>
+  </div>
+    <button class="contribution__button">ДИВИТИСЯ ЛЕКЦІЇ</button>
+</section>
+
+<div class="line"></div>
+
+
+<section class="team">
+  <h2 class="team__title">КОМАНДА</h2>
+
+  <div class="team__grid">
+    <!-- 1 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team1.jpg" alt="Круглик Богдан Валерійович">
+      </div>
+      <h3 class="team__name">Круглик Богдан Валерійович</h3>
+      <p class="team__position">Директор компанії FRENDТ</p>
+      <p><strong>Життєве кредо:</strong> Жити – це не означає дихати, жити – це діяти. Все залежить від тебе.</p>
+      <p><strong>Роки досвіду:</strong> 10+</p>
+      <p><strong>Досягнення:</strong> Успішне впровадження понад 100 агропроєктів.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team2.jpg" alt="Халізов Дмитро Вікторович">
+      </div>
+      <h3 class="team__name">Халізов Дмитро Вікторович</h3>
+      <p class="team__position">Фінансовий директор</p>
+      <p><strong>Життєве кредо:</strong> Не зупинятись, тільки вперед!</p>
+      <p><strong>Роки досвіду:</strong> 8</p>
+      <p><strong>Досягнення:</strong> Оптимізація фінансових потоків компанії.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team3.jpg" alt="Іваненко Оксана">
+      </div>
+      <h3 class="team__name">Іваненко Оксана</h3>
+      <p class="team__position">HR директор</p>
+      <p><strong>Життєве кредо:</strong> Люди – це головна цінність бізнесу.</p>
+      <p><strong>Роки досвіду:</strong> 12</p>
+      <p><strong>Досягнення:</strong> Побудова сильної корпоративної культури.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team4.jpg" alt="Петренко Андрій">
+      </div>
+      <h3 class="team__name">Петренко Андрій</h3>
+      <p class="team__position">Технічний директор</p>
+      <p><strong>Життєве кредо:</strong> Інновації — ключ до майбутнього.</p>
+      <p><strong>Роки досвіду:</strong> 15</p>
+      <p><strong>Досягнення:</strong> Запуск 5 нових технологічних напрямів.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team5.jpg" alt="Сидоренко Ірина">
+      </div>
+      <h3 class="team__name">Сидоренко Ірина</h3>
+      <p class="team__position">Маркетинг директор</p>
+      <p><strong>Життєве кредо:</strong> Реклама – це правда, яка подобається.</p>
+      <p><strong>Роки досвіду:</strong> 9</p>
+      <p><strong>Досягнення:</strong> Створення бренду з нуля.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team6.jpg" alt="Гончар Олег">
+      </div>
+      <h3 class="team__name">Гончар Олег</h3>
+      <p class="team__position">Головний інженер</p>
+      <p><strong>Життєве кредо:</strong> Винахідливість народжується з потреби.</p>
+      <p><strong>Роки досвіду:</strong> 14</p>
+      <p><strong>Досягнення:</strong> Автор 20+ технічних рішень.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team7.jpg" alt="Коваленко Марія">
+      </div>
+      <h3 class="team__name">Коваленко Марія</h3>
+      <p class="team__position">Аналітик</p>
+      <p><strong>Життєве кредо:</strong> Дані ніколи не брешуть.</p>
+      <p><strong>Роки досвіду:</strong> 7</p>
+      <p><strong>Досягнення:</strong> Побудова аналітичної системи компанії.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team8.jpg" alt="Романюк Тарас">
+      </div>
+      <h3 class="team__name">Романюк Тарас</h3>
+      <p class="team__position">Менеджер проектів</p>
+      <p><strong>Життєве кредо:</strong> Краще зробити, ніж відкладати.</p>
+      <p><strong>Роки досвіду:</strong> 6</p>
+      <p><strong>Досягнення:</strong> Реалізовано понад 50 успішних проектів.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="team__card">
+      <div class="team__photo">
+        <img src="img/team9.jpg" alt="Лисенко Юлія">
+      </div>
+      <h3 class="team__name">Лисенко Юлія</h3>
+      <p class="team__position">PR директор</p>
+      <p><strong>Життєве кредо:</strong> Слово має силу.</p>
+      <p><strong>Роки досвіду:</strong> 11</p>
+      <p><strong>Досягнення:</strong> Побудова міжнародного іміджу бренду.</p>
+    </div>
+  </div>
+</section>
+
+
+<script src="js/top-sales.js"></script>
+<script src="js/reviews.js"></script>
+</body>
+</html>

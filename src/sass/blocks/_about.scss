@@ -1,0 +1,70 @@
+.about {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+.about__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+
+  &--reverse {
+    .about__text {
+      order: -1; // текст піде над картинкою на десктопі
+    }
+  }
+}
+
+.about__img img {
+  width: 600px;
+  max-width: 584px;
+  height: auto;
+  display: block;
+}
+
+.about__text h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  font-family: 'Bahnschrift';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.about__text p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.about__text-mission {
+  margin-top: 40px;
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px auto 0 auto;
+  width: 400px;
+  height: 60px;
+  background: #00953B;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Bahnschrift';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #007a39;
+  }
+}
+

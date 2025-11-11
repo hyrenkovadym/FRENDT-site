@@ -1,0 +1,114 @@
+.top-sales { 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 50px auto 0 auto; 
+    text-align: center; 
+    padding-bottom: 150px;
+    &__title { 
+        font-size: 40px; 
+        font-weight: bold; 
+        margin-bottom: 40px; 
+        font-family: 'Bahnschrift', sans-serif; } 
+        &__slider { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 0; // gap не потрібен, бо стрілки позиціонуємо абсолютом 
+            position: relative; min-height: 430px; // щоб стрілки були по центру фото 
+            } 
+            &__arrow { 
+                background: none; 
+                border: none; 
+                font-size: 60px; 
+                color: #ccc; 
+                cursor: pointer; 
+                transition: color 0.2s; 
+                width: 60px; 
+                height: 60px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                z-index: 2; 
+                position: absolute; 
+                top: 170px; 
+ 
+                &--left { 
+                    left: -80px; // підбери під свій макет, щоб стрілка була зліва від фото 
+                    } 
+                    &--right { 
+                        right: -80px; // підбери під свій макет, щоб стрілка була справа від фото 
+                        } 
+                        &:hover { 
+                            color: #00923F; 
+                        } 
+                    } 
+                        &__slides { 
+                            position: relative;
+                            width: 1060px;
+                            height: 430px;
+                            margin: 0 auto;
+                         } 
+                         &__slide { 
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 430px;
+                            opacity: 0;
+                            transition: opacity 0.6s ease;
+                            pointer-events: none;
+                        } 
+                        .top-sales__slide.active {
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+
+                        .top-sales__slide.left {
+                          left: 0;    
+                        }
+
+                        .top-sales__slide.right {
+                          left: 630px; /* 430px + gap 200px (підбери під себе, у тебе було 170px) */
+                        }
+                        &__img-wrap { 
+                            width: 430px; 
+                            height: 350px;
+                            //background: #22b5731a; 
+                            display: flex; 
+                            align-items: center; 
+                            justify-content: center; 
+                        } 
+                        &__img { 
+                            max-width: 100%;
+                            max-height: 100%; 
+                            object-fit: contain;
+                        } 
+                        &__caption { 
+
+                            font-size: 28px; 
+                            font-weight: bold; 
+                            font-family: 'Bahnschrift', sans-serif; 
+                            min-height: 68px; 
+                            display: flex; 
+                            align-items: center; 
+                            justify-content: center; 
+                            text-align: center; 
+                            width: 100%; 
+                        } 
+                            &__btn { 
+                                margin-top: 25px; 
+                                align-self: center; 
+                                padding: 16px 64px; 
+                                font-size: 22px;
+                                border: 2px solid #000; 
+                                border-radius: 0; 
+                                background: #fff; 
+                                color: #000; 
+                                font-family: 'Bahnschrift', sans-serif; 
+                                cursor: pointer; 
+                                transition: background 0.2s, color 0.2s, border-color 0.2s; 
+                                &:hover { 
+                                    background: #00923F; 
+                                    color: #fff; 
+                                    border-color: #00923F; } 
+                                }
+                             }

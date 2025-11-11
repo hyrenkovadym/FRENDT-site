@@ -1,0 +1,24 @@
+.map{
+    height: 750px;
+    padding: 35px 0 15px 0;
+    background: rgba(217, 217, 217, 0.3);
+
+    &_text{
+        /* Нам довіряють */
+        font-family: 'Bahnschrift';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        /* identical to box height */
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &_photo{
+        display: block;
+        height: 650px;
+        margin: 0 auto;
+    }
+}

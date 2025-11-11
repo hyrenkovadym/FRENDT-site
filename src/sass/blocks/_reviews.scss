@@ -1,0 +1,137 @@
+.reviews {
+    max-width: 100%; 
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: rgba(0, 149, 59, 0.7);
+    /* Відгуки клієнтів */
+
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+  }
+
+  &__wrapper {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  &__slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+  }
+
+  &__arrow {
+    position: absolute;
+    margin: 0 180px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+
+    &--left {
+      left: 10px;
+    }
+
+    &--right {
+      right: 10px;
+    }
+
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+}
+.reviews__slide {
+  display: none; /* усі приховані */
+}
+
+.reviews__slide.active {
+  display: block; /* активні видно */
+}
+
+.reviews__slide.left,
+.reviews__slide.right {
+  display: inline-block; /* показуємо 2 сусідні */
+}
+
+
+.review-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  height: 400px;
+  width: 400px;
+  flex-shrink: 0;
+  padding: 36px 28px 0 28px;
+    background: rgba(217, 217, 217, 0.25);
+
+  &__video {
+    position: relative;
+
+    height: 250px;
+    background: #ddd;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #98c1a1;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  &__info {
+    padding: 15px;
+  }
+
+  &__title {
+    /* Дивитись повне відео */
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    
+  }
+
+  &__desc {
+    /* Короткий опис відео */
+    margin-top: 15px;
+    margin-bottom: 115px;
+    font-family: 'Bahnschrift';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+
+  }
+}
